@@ -93,8 +93,8 @@
         //│ RESET    │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │  RESET   │
            &sys_reset  &kp F1     &kp F2     &kp F3    &bt BT_SEL 0   &bt BT_CLR  &kp F10    &kp F11    &kp F12   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //                      │          │          │PROFILE 1 │   │          │          │          │          │          │
-           HRML(trans, F4,        F5,        F6)      &bt BT_SEL 1     &trans     HRMR(F13,  F14,        F15,      trans)
+        //  MUTE                │          │          │PROFILE 1 │   │          │          │          │          │PLAY/PAUSE│
+           HRML(C_MUTE, F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,  F14,        F15,     K_PLAY_PAUSE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //|BOOTLOADER│          │          │          │PROFILE 2 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &kp F7     &kp F8     &kp F9    &bt BT_SEL 2    &trans     &kp F16    &kp F17    &kp F18   &bootloader
