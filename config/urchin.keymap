@@ -65,7 +65,7 @@
         //│          │          │          │  %       │          │   │  &       │  _       │  +       │  │       │          │
             &trans     &trans     &trans     &kp PRCNT  &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp DEL    &trans
+                                             &trans     &trans        &lt 2 DEL    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
