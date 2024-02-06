@@ -74,13 +74,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │ :        │   │          │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
-           &caps_word  &kp N1     &kp N2     &kp N3    &kp COLON       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
+           &kp ESC     &kp N1     &kp N2     &kp N3    &kp COLON       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  4       │  5       │  6       │ ;        │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
             HRML(DEL,   N4,        N5,        N6)       &kp SEMI       &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS WRD │  7       │  8       │  9       │  0       │   │          │ INSERT   │          │          │          │
-          &CAPS_WORD  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &kp INS    &trans     &trans     &trans
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &kp INS    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
