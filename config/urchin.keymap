@@ -48,7 +48,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 3 TAB  &lt 1 SPACE    &lt 2 BSPC  &kp ENTER
+                                             &kp TAB   &lt 1 SPACE    &lt 2 BSPC  &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -73,14 +73,14 @@
 		right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  1       │  2       │  3       │ :        │   │          │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
-           &kp ESC     &kp N1     &kp N2     &kp N3    &kp COLON       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
+        //│ ESC      │  7       │  8       │  9       │ :        │   │          │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
+           &kp ESC     &kp N7     &kp N8     &kp N9    &kp COLON       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  4       │  5       │  6       │ ;        │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
             HRML(DEL,   N4,        N5,        N6)       &kp SEMI       &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS WRD │  7       │  8       │  9       │  0       │   │          │ INSERT   │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &kp INS    &trans     &trans     &trans
+        //│ CAPS WRD │  1       │  2       │  3       │  0       │   │          │ INSERT   │          │          │          │
+           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp INS    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -91,13 +91,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │  RESET   │
-           &sys_reset  &kp F1     &kp F2     &kp F3    &bt BT_SEL 0   &bt BT_CLR  &kp F10    &kp F11    &kp F12   &sys_reset
+           &sys_reset  &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F16    &kp F17    &kp F18   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //  MUTE                │          │          │PROFILE 1 │   │          │          │          │          │PLAY/PAUSE│
            HRML(C_MUTE, F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,  F14,        F15,     K_PLAY_PAUSE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //|BOOTLOADER│          │          │          │PROFILE 2 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &kp F7     &kp F8     &kp F9    &bt BT_SEL 2    &trans     &kp F16    &kp F17    &kp F18   &bootloader
+          &bootloader  &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F10    &kp F11    &kp F12   &bootloader
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
