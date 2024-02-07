@@ -56,14 +56,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ~       │  &       │  (       │  )       │ :        │   │          │  {       │  }       │  [       │  ]       │
-            &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR  &kp COLON       &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
+        //│  ~       │  &       │  (       │  )       │          │   │ - _      │  = +     │  [ {     │  ] }     │  \ │     │
+            &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR   &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │  $       │  %       │  ^       │  ;       │   │          │  -       │  +       │  *       │  │       │
-            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &kp SEMI       &trans     HRMR(MINUS, PLUS,      ASTRK,      PIPE)
+        //│  `       │  $       │  %       │  ^       │          │   │          │  {       │   }      │  ; :     │  ' "     │
+            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &trans     HRMR(LBRC,  RBRC,      SEMI,      SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ !        │  @       │  #       │          │   │          │  _       │  =       │  \       │          │
-            &trans     &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp UNDER  &kp EQUAL  &kp BSLH   &trans
+        //│          │ !        │  @       │  #       │          │   │          │  :       │  , <     │  . >     │  / ?     │
+            &trans     &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp COLON  &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &lt 2 DEL    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -73,11 +73,11 @@
 		right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  7       │  8       │  9       │ :        │   │          │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
-           &kp ESC     &kp N7     &kp N8     &kp N9    &kp COLON       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
+        //│ ESC      │  7       │  8       │  9       │          │   │          │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
+           &kp ESC     &kp N7     &kp N8     &kp N9     &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  4       │  5       │  6       │ ;        │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
-            HRML(DEL,   N4,        N5,        N6)       &kp SEMI       &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
+        //│ CAPS     │  4       │  5       │  6       │          │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
+            HRML(DEL,   N4,        N5,        N6)       &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS WRD │  1       │  2       │  3       │  0       │   │          │ INSERT   │          │          │          │
            &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp INS    &trans     &trans     &trans
