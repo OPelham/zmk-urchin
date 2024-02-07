@@ -56,14 +56,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│  ~       │  &       │  (       │  )       │ :        │   │          │  {       │  }       │  [       │  ]       │
+            &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR  &kp COLON       &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │          │   │  *       │  -       │  =       │  \       │  `       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &trans         &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│  `       │  $       │  %       │  ^       │  ;       │   │          │  -       │  +       │  *       │  │       │
+            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &kp SEMI       &trans     HRMR(MINUS, PLUS,      ASTRK,      PIPE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │  %       │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &kp PRCNT  &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │ !        │  @       │  #       │          │   │          │  _       │  =       │  \       │          │
+            &trans     &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp UNDER  &kp EQUAL  &kp BSLH   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &lt 2 DEL    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
