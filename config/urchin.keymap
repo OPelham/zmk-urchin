@@ -77,12 +77,12 @@
            &kp ESC     &kp N7     &kp N8     &kp N9     &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  4       │  5       │  6       │          │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
-            HRML(DEL,   N4,        N5,        N6)       &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
+            HRML(CAPS,   N4,        N5,        N6)      &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS WRD │  1       │  2       │  3       │  0       │   │          │ INSERT   │          │          │          │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &kp INS    &trans     &trans     &trans
+        //│ CAPS WRD │  1       │  2       │  3       │          │   │          │ INSERT   │          │          │          │
+           &caps_word  &kp N1     &kp N2     &kp N3     &trans         &trans     &kp INS    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &kp N0     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -90,14 +90,14 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │  RESET   │
-           &sys_reset  &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F16    &kp F17    &kp F18   &sys_reset
+        //│          │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │  MUTE    │
+            &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F19    &kp F20    &kp F21   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //  MUTE                │          │          │PROFILE 1 │   │          │          │          │          │PLAY/PAUSE│
-           HRML(C_MUTE, F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,  F14,        F15,     C_PLAY_PAUSE)
+           HRML(F11  , F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F16,   F17,        F18,    C_PLAY_PAUSE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //|BOOTLOADER│          │          │          │PROFILE 2 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F10    &kp F11    &kp F12   &bootloader
+        //|          │          │          │          │PROFILE 2 │   │          │          │          │          │ scrnshot │
+            &kp F10    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F13    &kp F14    &kp F15    &kp F15
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
