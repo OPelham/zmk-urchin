@@ -59,8 +59,8 @@
         //│  ~       │  &       │  (       │  )       │          │   │ - _      │  = +     │  [ {     │  ] }     │  \ │     │
             &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR   &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │  $       │  %       │  ^       │          │   │          │  {       │   }      │  ; :     │  ' "     │
-            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &trans     HRMR(LBRC,  RBRC,      SEMI,      SQT)
+        //│  `       │  $       │  %       │  ^       │          │   │  *       │  {       │   }      │  ; :     │  ' "     │
+            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &kp STAR   HRMR(LBRC,  RBRC,      SEMI,      SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ !        │  @       │  #       │          │   │          │  :       │  , <     │  . >     │  / ?     │
             &trans     &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp COLON  &kp COMMA  &kp DOT    &kp FSLH
@@ -90,13 +90,15 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │PROFILE 0 │   │ CLEAR BT │  IDE     │ Terminal │ DevToys  │          │
+        //│          │          │          │          │PROFILE 0 │   │ CLEAR BT │  IDE     │ Terminal │ DevToys  │  Vol Up  │
             &kp F19    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F16    &kp F17    &kp F18    &kp F22
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  scrnshot |          │          │          │PROFILE 1 │   │          │ Obsidian │ Reminder | Calendar │   MUTE   │
-           HRML(F20,   F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,   F14,        F15,       F23)
+        //  scrnshot |          │          │          │PROFILE 1 │   │          │ Obsidian │ Reminder | Calendar │ Vol Down │
+        //           |          │          │          │          │   │          │ Chat GPT │          |   Mail   │   MUTE   │
+           HRML(F20,    F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,   F14,        F15,       F23)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //| scrnshot │          │          │          │PROFILE 2 │   │          │          │          │          │PLAY/PAUSE│
+        //| ss dsktp │          │          │          │PROFILE 2 │   │          │          │          │          │PLAY/PAUSE│
+        //|          │          │          │          │          │   │          │          │          │          │  Music   │
             &kp F21    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F10    &kp F11    &kp F12    &kp F24
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
