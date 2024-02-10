@@ -59,11 +59,11 @@
         //│  ~       │  &       │  (       │  )       │          │   │ - _      │  = +     │  [ {     │  ] }     │  \ │     │
             &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR   &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │  $       │  %       │  ^       │          │   │  *       │  {       │   }      │  ; :     │  ' "     │
-            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &kp STAR   HRMR(LBRC,  RBRC,      SEMI,      SQT)
+        //│  `       │  $       │  %       │  ^       │          │   │          │  {       │   }      │  ; :     │  ' "     │
+            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &trans    HRMR(LBRC,  RBRC,      SEMI,      SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ !        │  @       │  #       │          │   │          │  :       │  , <     │  . >     │  / ?     │
-            &trans     &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp COLON  &kp COMMA  &kp DOT    &kp FSLH
+        //│  *       │ !        │  @       │  #       │          │   │          │  :       │  , <     │  . >     │  / ?     │
+            &kp STAR   &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp COLON  &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &lt 2 DEL    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
