@@ -34,6 +34,12 @@
         };
     };
 
+    ZMK_MACRO(hyper_key,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
+    )
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -48,7 +54,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TAB   &lt 1 SPACE    &lt 2 BSPC  &kp ENTER
+                                             &kp TAB   &lt 1 SPACE    &lt 2 BSPC  &ht ENTER hyper_key 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
