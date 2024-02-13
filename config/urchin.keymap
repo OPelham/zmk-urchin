@@ -82,11 +82,11 @@
         //│ ESC      │  7       │  8       │  9       │          │   │ ESC      │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
            &kp ESC     &kp N7     &kp N8     &kp N9     &trans         &kp ESC    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  4       │  5       │  6       │  ,       │   │ CAPS     │  LEFT    │ DOWN     │ UP       │ RIGHT    │
-            HRML(CAPS,   N4,        N5,        N6)      &kp COMMA      &kp CAPS   &kp LARW   &kp DARW   &kp UARW   &kp RARW
+        //│ CAPS     │  4       │  5       │  6       │  .       │   │ CAPS     │  LEFT    │ DOWN     │ UP       │ RIGHT    │
+            HRML(CAPS,   N4,        N5,        N6)      &kp DOT        &kp CAPS   &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS WRD │  1       │  2       │  3       │  .       │   │ CAPS WRD │ INSERT   │          │          │          │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp DOT       &caps_word  &kp INS    &trans     &trans     &trans
+        //│ CAPS WRD │  1       │  2       │  3       │  ,       │   │ CAPS WRD │ INSERT   │          │          │          │
+           &caps_word  &kp N1     &kp N2     &kp N3     &kp COMMA      &caps_word  &kp INS    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp N0     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -96,15 +96,13 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ Key Map  │          │          │          │PROFILE 0 │   │ CLEAR BT │  IDE     │ Terminal │ DevToys  │  Vol Up  │
+        //│          │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │          │
             &kp F19    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F16    &kp F17    &kp F18    &kp F22
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  scrnshot |          │          │          │PROFILE 1 │   │          │ Obsidian │ Reminder | Calendar │ Vol Down │
-        //           |          │          │          │          │   │          │ Chat GPT │          |   Mail   │   MUTE   │
+        //           |          │          │          │PROFILE 1 │   │          │          │          |          │          │
            HRML(F20,    F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F13,   F14,        F15,       F23)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //| ss dsktp │          │          │          │PROFILE 2 │   │          │          │          │          │PLAY/PAUSE│
-        //|          │          │          │          │          │   │          │          │          │          │  Music   │
+        //|          │          │          │          │PROFILE 2 │   │          │          │          │          │          │
             &kp F21    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F10    &kp F11    &kp F12    &kp F24
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
