@@ -26,6 +26,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_clear_bt {
+            timeout-ms = <50>;
+            key-positions = <20 29>;
+            bindings = <&bt BT_CLR>;
+            layers = <3>
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -96,8 +106,8 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │PROFILE 0 │   │ CLEAR BT │          │          │          │          │
-            &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0   &bt BT_CLR  &kp F19    &kp F20    &kp F21    &kp F24
+        //│          │          │          │          │PROFILE 0 │   │          │          │          │          │          │
+            &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0    &trans     &kp F19    &kp F20    &kp F21    &kp F24
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //           |          │          │          │PROFILE 1 │   │          │          │          |          │          │
            HRML(F11,    F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F16,   F17,        F18,       F23)
