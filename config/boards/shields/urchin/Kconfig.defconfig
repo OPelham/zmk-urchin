@@ -4,10 +4,10 @@
 if SHIELD_URCHIN_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "urchin"
+    default "Urchin"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    default yf
 
 endif
 
