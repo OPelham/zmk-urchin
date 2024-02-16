@@ -32,7 +32,7 @@
             timeout-ms = <50>;
             key-positions = <20 29>;
             bindings = <&bt BT_CLR>;
-            layers = <3>
+            layers = <3>;
         };
     };
 
