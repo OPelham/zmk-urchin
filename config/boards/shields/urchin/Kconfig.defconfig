@@ -7,7 +7,7 @@ config ZMK_KEYBOARD_NAME
     default "urchin"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default yf
+    default y
 
 endif
 
