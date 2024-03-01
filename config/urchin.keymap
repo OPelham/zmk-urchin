@@ -89,8 +89,8 @@
 		right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  7       │  8       │  9       │          │   │ ESC      │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
-           &kp ESC     &kp N7     &kp N8     &kp N9     &trans         &kp ESC    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
+        //│ ESC      │  7       │  8       │  9       │  :       │   │ ESC      │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
+           &kp ESC     &kp N7     &kp N8     &kp N9     &kp COLON      &kp ESC    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  4       │  5       │  6       │  .       │   │ CAPS     │  LEFT    │ DOWN     │ UP       │ RIGHT    │
             HRML(CAPS,   N4,        N5,        N6)      &kp DOT        &kp CAPS   HRMR(LARW,  DARW,      UARW,      RARW)
