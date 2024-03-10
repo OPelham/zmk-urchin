@@ -26,7 +26,7 @@
             timeout-ms = <50>;
             key-positions = <20 29>;
             bindings = <&bt BT_CLR>;
-            layers = <3>;
+            layers = <4>;
         };
         combo_toggle_colmak {
             timeout-ms = <50>;
@@ -130,15 +130,15 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //           |          |          |          |          |   |          | FR       │ Open Mus │ Ply/Paus │ FF       │
+        //           |          |          |          |          |   | qwerty   | FR       │ Open Mus │ Ply/Paus │ FF       │
         //│          │          │          │          │PROFILE 0 │   │          │          │          │          │          │
-            &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0    &trans     &kp F19    &kp F20    &kp F21    &kp F24
+            &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0    &to 1      &kp F19    &kp F20    &kp F21    &kp F24
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //           |          │          │          │PROFILE 1 │   │          │          │          |          │          │
-           HRML(F11,    F4,        F5,        F6)      &bt BT_SEL 1    &trans     HRMR(F16,   F17,        F18,       F23)
+        //           |          │          │          │PROFILE 1 │   │ colmak   │          │          |          │          │
+           HRML(F11,    F4,        F5,        F6)      &bt BT_SEL 1    &to 2      HRMR(F16,   F17,        F18,       F23)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //|          │          │          │          │PROFILE 2 │   │          │          │          │          │          │
-            &kp F10    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F13    &kp F14    &kp F15    &kp F22
+            &kp F10    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F13    &kp F14    &kp F15    &bt BT_CLR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
