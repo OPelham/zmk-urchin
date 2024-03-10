@@ -28,13 +28,25 @@
             bindings = <&bt BT_CLR>;
             layers = <3>;
         };
+        combo_toggle_colmak {
+            timeout-ms = <50>;
+            key-positions = <0 9>;
+            bindings = <&to 1>;
+            layers = <4>;
+        };
+        combo_toggle_qwerty {
+            timeout-ms = <50>;
+            key-positions = <10 19>;
+            bindings = <&to 0>;
+            layers = <4>;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <left_layer right_layer>;
-            then-layer = <tri_layer>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -62,6 +74,24 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
+        colmak_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  G       │   │  J       │  L       │  U       │  Y       │  ;       │
+            &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  D       │   │  H       │  N       │  E       │  I       │  O       │
+            HRML(A,        R,         S,         T)     &kp D          &kp H      HRMR(N,        E,         I,        O)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  V       │  B       │   │  K       │  M       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &kp TAB   &lt 1 SPACE    &lt 2 BSPC  &mt LC(LS(LALT)) ENTER 
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
 
         left_layer {
             bindings = <
