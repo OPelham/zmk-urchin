@@ -33,8 +33,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <left_layer right_layer>;
+            then-layer = <tri_layer>;
         };
     };
 
