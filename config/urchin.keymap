@@ -7,6 +7,11 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3  &ht RSHFT k4
 
+#define COLMAK 0
+#define SYMBOLS   1
+#define NUMBERS   2
+#define FUNCTIONS   3
+
 / {
     behaviors {
         ht: hold_tap {
