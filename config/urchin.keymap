@@ -8,9 +8,9 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3  &ht RSHFT k4
 
 #define COLMAK 0
-#define SYMBOLS   1
-#define NUMBERS   2
-#define FUNCTIONS   3
+#define SYMBOLS 1
+#define NUMBERS 2
+#define FUNCTIONS 3
 
 / {
     behaviors {
@@ -48,7 +48,7 @@
         colmak_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ;       │
+        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ; :     │
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
@@ -66,14 +66,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ~       │  &       │  (       │  )       │          │   │ - _      │  = +     │  [ {     │  ] }     │  \ │     │
-            &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR   &trans         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
+        //│  ~       │  &       │  (       │  )       │          │   │          │  = +     │  [ {     │  ] }     │  \ │     │
+            &kp TILDE  &kp AMPS   &kp LPAR   &kp RPAR   &trans         &trans     &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  `       │  $       │  %       │  ^       │          │   │          │  {       │   }      │  ; :     │  ' "     │
-            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &trans    HRMR(LBRC,  RBRC,      SEMI,      SQT)
+        //│  `       │  $       │  %       │  ^       │          │   │          │ - _      │  {       │   }      │  ' "     │
+            HRML(GRAVE, DLLR,      PRCNT,     CARET)    &trans         &trans    HRMR(MINUS, LBRC,      RBRC,       SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  *       │ !        │  @       │  #       │          │   │          │  :       │  , <     │  . >     │  / ?     │
-            &kp STAR   &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp COLON  &kp COMMA  &kp DOT    &kp FSLH
+        //│  *       │ !        │  @       │  #       │          │   │          │  _       │  <       │  >       │  / ?     │
+            &kp STAR   &kp EXCL   &kp AT     &kp HASH   &trans         &trans     &kp UNDER  &kp LT     &kp GT     &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &lt 2 DEL    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -87,10 +87,10 @@
            &kp ESC     &kp N7     &kp N8     &kp N9     &kp COLON      &kp ESC    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  4       │  5       │  6       │  .       │   │ CAPS     │  LEFT    │ DOWN     │ UP       │ RIGHT    │
-            HRML(CAPS,   N4,        N5,        N6)      &kp DOT        &kp CAPS   HRMR(LARW,  DARW,      UARW,      RARW)
+            HRML(CLCK,  N4,        N5,        N6)      &kp DOT        &kp CAPS   HRMR(LARW,  DARW,      UARW,      RARW)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS WRD │  1       │  2       │  3       │  ,       │   │ CAPS WRD │ INSERT   │          │          │          │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp COMMA      &caps_word  &kp INS    &trans     &trans     &trans
+        //│  0       │  1       │  2       │  3       │  ,       │   │ CAPS WRD │ INSERT   │          │          │          │
+             &kp N0    &kp N1     &kp N2     &kp N3     &kp COMMA      &caps_word  &kp INS    &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp N0     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -100,11 +100,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //           |          |          |          |          |   | qwerty   | FR       │ Open Mus │ Ply/Paus │ FF       │
+        //           |          |          |          |          |   |          | FR       │ Open Mus │ Ply/Paus │ FF       │
         //│          │          │          │          │PROFILE 0 │   │          │          │          │          │          │
             &kp F12    &kp F7     &kp F8     &kp F9    &bt BT_SEL 0    &to 1      &kp F19    &kp F20    &kp F21    &kp F24
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //           |          │          │          │PROFILE 1 │   │ colmak   │          │          |          │          │
+        //           |          │          │          │PROFILE 1 │   │          │          │          |          │          │
            HRML(F11,    F4,        F5,        F6)      &bt BT_SEL 1    &to 2      HRMR(F16,   F17,        F18,       F23)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //|          │          │          │          │PROFILE 2 │   │          │          │          │          │          │
