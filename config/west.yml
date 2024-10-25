@@ -1,8 +1,8 @@
 manifest:
   remotes:
-      # zmk official
+      # zmk official fork with mouse emulation
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/ftc/
       # bravekarma
     - name: caksoylar
       url-base: https://github.com/caksoylar
@@ -12,7 +12,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: mouse-ftc 
       import: app/west.yml
     - name: nice-view-gem
       remote: m165437
