@@ -45,6 +45,13 @@
 
     combos {
         compatible = "zmk,combos"; 
+
+        mouse_layer {
+            bindings = <&lt 2>;
+            key-positions = <30 33>;
+            timeout-ms = <50>;
+        };
+
     };
 
     conditional_layers {
