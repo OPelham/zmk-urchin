@@ -62,11 +62,11 @@
     combos {
         compatible = "zmk,combos"; 
 
-        //mouse_layer_combo {
-        //    bindings = <&mo 3>;
-        //    key-positions = <30 33>;
-        //    timeout-ms = <50>;
-        //};
+        function_layer_combo {
+            bindings = <&mo 3>;
+            key-positions = <30 33>;
+            timeout-ms = <50>;
+        };
 
         game_layer_combo {
             bindings = <&tog 5>;
@@ -80,7 +80,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 
@@ -175,7 +175,7 @@
         //                                                                        scroll L  scroll up  scroll dwn  scroll R   
             &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_RIGHT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                                 -----          ------
+        //                                               -----          ------
                                              &trans     &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
