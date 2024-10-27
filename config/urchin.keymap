@@ -15,6 +15,7 @@
 #define NUMBERS 2
 #define FUNCTIONS 3
 #define MOUSE 4
+#define GAME 5
 
 #define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
 #undef MOVE_UP
@@ -104,7 +105,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 2 TAB &lt 1 SPACE    &lt 2 BSPC  &mt LC(LS(LALT)) ENTER 
+                                  &lt MOUSE TAB   &lt SYMBOLS SPACE    &lt NUMBERS BSPC    &mt LC(LS(LALT)) ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -156,7 +157,7 @@
         //|          │          │          │          │PROFILE 2 │   │          │          │          │          │          │
             &kp F10    &kp F1     &kp F2     &kp F3    &bt BT_SEL 2    &trans     &kp F13    &kp F14    &kp F15    &bt BT_CLR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 2 TAB  &trans         &trans     &trans
+                                        &lt MOUSE TAB    &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
