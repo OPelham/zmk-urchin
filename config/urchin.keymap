@@ -130,14 +130,14 @@
             label = "NUMBERS";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  :       │  7       │  8       │  9       │          │   │ ESC      │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
-           &kp COLON   &kp N7     &kp N8     &kp N9     &trans         &kp ESC    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
+        //│  :       │  7       │  8       │  9       │          │   │ ESC      │ INSERT   │ UP       │          │          │
+           &kp COLON   &kp N7     &kp N8     &kp N9     &trans         &kp ESC    &kp INS    &kp UARW    &trans     &trans     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  .       │  4       │  5       │  6       │          │   │ CAPS     │  LEFT    │ DOWN     │ UP       │ RIGHT    │
-            HRML(DOT,   N4,        N5,        N6)       &trans         &kp CAPS   HRMR(LARW,  DARW,      UARW,      RARW)
+        //│  .       │  4       │  5       │  6       │          │   │ CAPS     │  LEFT    │ DOWN     │ RIGHT    │          │
+            HRML(DOT,   N4,        N5,        N6)       &trans         &kp CAPS   HRMR(LARW,  DARW,      RARW,      RARW)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  0       │  1       │  2       │  3       │          │   │ CAPS WRD │ INSERT   │          │          │          │
-             &kp N0    &kp N1     &kp N2     &kp N3     &trans        &caps_word  &kp INS    &trans     &trans     &trans
+        //│  0       │  1       │  2       │  3       │          │   │ CAPS WRD │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
+             &kp N0    &kp N1     &kp N2     &kp N3     &trans        &caps_word  &kp HOME  &kp PG_DN   &kp PG_UP  &kp END
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 2 N0     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -166,14 +166,14 @@
             label = "MOUSE";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //              mouse 4   mouse 5                                         scroll L  scroll up  scroll dwn  scroll R      
-           &trans      &mkp MB4   &mkp MB5   &trans    &trans         &trans     &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+        //              mouse 4   mouse 5                                                       up          
+           &trans      &mkp MB4   &mkp MB5   &trans    &trans           &trans     &trans  &mmv MOVE_UP  &trans   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //             R click   Mid click   L click                                            up       
-            &trans     &mkp MB2   &mkp MB3   &mkp MB1  &trans           &trans     &trans  &mmv MOVE_UP  &trans   &trans
+        //             R click   Mid click   L click                                left       down      right
+            &trans     &mkp MB2   &mkp MB3   &mkp MB1  &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //                                                                          left       down      right
-            &trans     &trans     &trans     &trans     &trans        &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
+        //                                                                        scroll L  scroll up  scroll dwn  scroll R   
+            &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_RIGHT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                                 -----          ------
                                              &trans     &trans          &trans     &trans
