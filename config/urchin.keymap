@@ -105,7 +105,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &lt MOUSE TAB   &lt SYMBOLS SPACE    &lt NUMBERS BSPC    &mt LC(LS(LALT)) ENTER 
+                                  &lt 3 TAB   &lt SYMBOLS SPACE    &lt NUMBERS BSPC    &mt LC(LS(LALT)) ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
