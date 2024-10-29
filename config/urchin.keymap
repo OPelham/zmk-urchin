@@ -133,8 +133,8 @@
         //│  :       │  7       │  8       │  9       │          │   │ ESC      │ INSERT   │ UP       │          │          │
            &kp COLON   &kp N7     &kp N8     &kp N9     &trans         &kp ESC    &kp INS    &kp UARW    &trans     &trans     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  .       │  4       │  5       │  6       │          │   │ CAPS     │  LEFT    │ DOWN     │ RIGHT    │          │
-            HRML(DOT,   N4,        N5,        N6)       &trans         &kp CAPS   HRMR(LARW,  DARW,      RARW,      RARW)
+        //│  .       │  4       │  5       │  6       │          │   │ CAPS     │  LEFT    │ DOWN     │ UP       │          │
+            HRML(DOT,   N4,        N5,        N6)       &trans         &kp CAPS   HRMR(LARW,  DARW,      UARW,      RARW)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  0       │  1       │  2       │  3       │          │   │ CAPS WRD │  HOME    │ PAGE DN  │ PAGE UP  │ END      │ 
              &kp N0    &kp N1     &kp N2     &kp N3     &trans        &caps_word  &kp HOME  &kp PG_DN   &kp PG_UP  &kp END
@@ -172,8 +172,8 @@
         //             R click   Mid click   L click                                left       down      right
             &trans     &mkp MB2   &mkp MB3   &mkp MB1  &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //                                                                        scroll L  scroll up  scroll dwn  scroll R   
-            &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_RIGHT
+        //                                                                        scroll R  scroll up  scroll dwn  scroll L   
+            &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_RIGHT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_LEFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                               -----          ------
                                              &trans     &trans          &trans     &trans
@@ -194,7 +194,7 @@
         //│  Ctl     │  Z       │  X       │  C       │  V       │   │  B       │  N       │ M        │ P        │ Caps     │
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp B      &kp N      &kp M      &kp P      &kp CAPS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TAB   &kp SPACE       &kp BSPC  &kp ENTER 
+                                             &kp TAB   &kp SPACE      &kp BSPC  &kp ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
