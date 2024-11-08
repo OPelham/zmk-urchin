@@ -99,6 +99,12 @@
             timeout-ms = <50>;
         };
 
+        repeat_key_combo {
+            bindings = <&key_repeat>;
+            key-positions = <24 25>;
+            timeout-ms = <50>;
+        };
+
     };
 
     conditional_layers {
