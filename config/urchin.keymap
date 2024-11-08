@@ -1,6 +1,4 @@
 // TODO
-// toggle ability to enter homerow mod and layer
-// change type of layer tap to tap preffered
 // add macro to accelerate or teleport mouse in each directions
 
 #include <behaviors.dtsi>
@@ -33,7 +31,7 @@
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 &mmv {
-	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+ 	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
 #define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
@@ -201,7 +199,7 @@
            &trans      &mkp MB4   &mkp MB5   &trans    &trans           &trans     &trans  &mmv MOVE_UP  &trans   &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //             R click   Mid click   L click                                left       down      right
-            &trans     &mkp MB2   &mkp MB3   &mkp MB1  &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
+&kp LC(LS(LALT(LGUI))) &mkp MB2   &mkp MB3   &mkp MB1   &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //                                                                        scroll R  scroll up  scroll dwn  scroll L   
             &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_RIGHT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_LEFT
