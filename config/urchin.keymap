@@ -84,7 +84,7 @@
         mouseup: mouse_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <& LC(LS(LG(LO(U))))>;
+            bindings = <&mmv MOVE_UP>, <&kp LC(LS(LG(LO(U))))>;
             mods = <(MOD_LSFT)>;
         };
     };
