@@ -89,7 +89,7 @@
 
         function_layer_combo {
             bindings = <&mo FUNCTIONS>;
-            key-positions = <30 33>;
+            key-positions = <30 33>; //inner thumb keys
             timeout-ms = <50>;
         };
 
@@ -101,7 +101,7 @@
 
         repeat_key_combo {
             bindings = <&key_repeat>;
-            key-positions = <24 25>;
+            key-positions = <24 25>; //bottom lower inner keys
             timeout-ms = <50>;
         };
 
