@@ -203,7 +203,7 @@
             &kp LSHFT &mkp MB2   &mkp MB3   &mkp MB1   &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //                                                                        scroll R  scroll up  scroll dwn  scroll L   
-            &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_LEFT
+            &trans     &trans     &trans     &trans     &trans        &trans  &msc SCRL_RIGHT &msc SCRL_UP &msc SCRL_DOWN  &msc SCRL_LEFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                               -----          ------
                                              &trans     &trans          &trans     &trans
