@@ -106,7 +106,7 @@
 
         repeat_key_combo_left {
             bindings = <&key_repeat>;
-            key-positions = <24 25>; //bottom right index and middle finger keys
+            key-positions = <22 23>; //bottom right index and middle finger keys
             timeout-ms = <50>;
         };
 
